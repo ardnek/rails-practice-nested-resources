@@ -1,0 +1,16 @@
+<div class="page-header">
+  <h1><%= @passenger.name %></h1>
+</div>
+
+<h3>Suitcases...</h3>
+
+<div class="well">
+  <ul>
+    <% @passenger.suitcase.each do |suitcase| %>
+    <li><%= suitcase.description %></li>
+    <% end %>
+  </ul>
+
+
+
+</div>

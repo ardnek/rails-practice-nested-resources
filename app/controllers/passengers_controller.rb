@@ -4,4 +4,8 @@ class PassengersController < ApplicationController
     @passengers = Passenger.all
   end
 
+ def show
+  @passenger = Passenger.find(params[:id])
+  end
+
 end
